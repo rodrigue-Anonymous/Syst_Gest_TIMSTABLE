@@ -1,0 +1,171 @@
+/* GLOBAL STYLES */
+body {
+    padding-top: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+  }
+  
+  .navbar {
+    font-size: 18px;
+    padding: 25px 0 15px 0;
+  }
+  
+  .centered-hr {
+    display: block;
+    margin: 1px auto 20px auto;
+  }
+  
+  body {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: blue rgba(255, 255, 255, 0.5);
+  }
+  
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: blue rgba(255, 255, 255, 0.5);
+  }
+  
+  body {
+    min-height: 200vh;
+  }
+  
+  /* BODY */
+  body {
+    background-image: url(img/tel1.jpeg);
+    background-size: cover;
+    font-family: lato;
+  }
+  
+  .moi {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: 100px auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.283);
+    border-radius: 10px;
+  }
+  
+  .moi h1 {
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(13, 9, 245);
+  }
+  
+  .form input {
+    width: 100%;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(18, 18, 19, 0.829);
+    padding-left: 10px;
+  }
+  
+  .form label {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .ho {
+    margin: 0 0 0 130px;
+  }
+  
+  .btn input {
+    position: relative;
+    left: 70px;
+    height: 40px;
+    width: 190px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+    background-color: rgb(154, 154, 242);
+    cursor: pointer;
+    box-shadow: 0 6px rgb(48, 48, 85);
+    border-radius: 99999px;
+  }
+  
+  .btn input:hover {
+    position: relative;
+    top: 2px;
+    box-shadow: 0 4px rgb(89, 89, 194);
+  }
+  
+  .btn input:active {
+    box-shadow: 0 0 rgb(154, 154, 242);
+    background-color: white;
+    top: 4px;
+  }
+  
+  .bouton p {
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+  }
+  
+  .bouton a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .form2 input {
+    position: relative;
+    margin: 20px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    left: -53px;
+    border-radius: 99999px;
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(250, 251, 252, 0.111);
+  }
+  
+  .form2 input:hover {
+    position: relative;
+    top: 2px;
+    box-shadow: 0 4px rgb(55, 55, 56);
+  }
+  
+  .form2 input:active {
+    box-shadow: 0 0 rgb(154, 154, 242);
+    background-color: white;
+    top: 4px;
+  }
+  
+    
+  .log input:active {
+    box-shadow: 0 0 rgb(154, 154, 242);
+    background-color: white;
+    top: 4px;
+  }
+  
+  /* RESPONSIVE CSS */
+  @media (max-width: 768px) {
+    .moi {
+      margin: 50px auto;
+      padding: 30px;
+    }
+  
+    .ho {
+      margin: 0;
+    }
+  }
+  

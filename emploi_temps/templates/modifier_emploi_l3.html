@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modifier un emploi</title>
+</head>
+<body>
+  <h1>Modifier un emploi Licence 3</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Modifier</button>
+  </form>
+</body>
+</html>

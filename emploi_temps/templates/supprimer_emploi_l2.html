@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emploi du temps - Supprimer</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333333;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    button[type="submit"] {
+      background-color: #428bca;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Emploi du temps Licence 2 - Supprimer</h1>
+
+  <p>Voulez-vous vraiment supprimer cet emploi du temps ?</p>
+
+  <p><strong>Plage horaire:</strong> {{ schedule.time_slot }}</p>
+  <p><strong>Jour:</strong> {{ schedule.day }}</p>
+  <p><strong>Cours:</strong> {{ schedule.course }}</p>
+  <p><strong>Professeur:</strong> {{ schedule.professor }}</p>
+  <p><strong>Salle:</strong> {{ schedule.classroom }}</p>
+  <p><strong>Groupe:</strong> {{ schedule.group }}</p>
+  <p><strong>Masse horaire:</strong> {{ schedule.credit_hours }}</p>
+  <p><strong>Informations:</strong> {{ schedule.info }}</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirmer la suppression</button>
+  </form>
+
+</body>
+</html>

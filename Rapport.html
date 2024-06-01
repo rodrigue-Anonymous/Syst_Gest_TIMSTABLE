@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Rapport</title>
+    <style>/* Reset CSS */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        list-style-type: none;
+      }
+      
+      h2 {
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 2em;
+      }
+      
+      a {
+        text-decoration: none;
+        color: greenyellow;
+      }
+      
+      /* ****************** NAVBAR **************** */
+      nav {
+        overflow: hidden;
+        background-color: rgb(103, 33, 120);
+        position: fixed;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      header li {
+        float: right;
+        font-size: 1.2em;
+      }
+      
+      header li a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding: 18px 16px;
+      }
+      
+      #logo {
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+        float: left;
+      }
+      
+      /* ****************** IMAGE PRINCIPALE **************** */
+      #imgpage {
+        padding-top: 60px;
+        background-color: antiquewhite;
+        background-size: cover;
+        height: 799px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 10%;
+      }
+      
+      .imagePage h4 {
+        font-family: 'Dancing Script', cursive;
+        text-align: left;
+        font-size: 1.8em;
+        margin: 15px;
+        font-weight: 300;
+      }
+      
+      h1 {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        color: rgb(0, 0, 255);
+        font-size: 4em;
+        margin-top: 100px;
+      }
+      
+      #premierTrait {
+        height: 1px;
+        width: 50%;
+        margin: -3px auto;
+        background-color: blue;
+      }
+      
+      h3 {
+        text-align: center;
+        color: red;
+        font-size: 3em;
+      }
+      
+      /* ****************** PRESENTATION **************** */
+      #presentation {
+        background-color: #f1f2f6;
+        padding: 20px 2%;
+      }
+      
+      #presentation h2 {
+        padding-top: 60px;
+      }
+      
+      /* ****************** FOOTER **************** */
+      footer {
+        background-color: #c1faf5;
+        color: #000000;
+        padding: 10px 0;
+        text-align: center;
+      }
+      
+      footer h2 {
+        margin-top: 20px;
+        color: #070707;
+      }
+      
+      footer p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+      
+      /* Other corrections */
+      #presentation table {
+        margin: 20px auto;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      #presentation th,
+      #presentation td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+      }
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <header>
+<nav>
+    <ul>
+        <li id="logo"><a href="#">Rapport</a></li>
+        <li><a href="#conception">Description de la conception</a></li>
+        <li><a href="#deploiement">Instruction de déploiement</a></li>
+        <li><a href="#manuel">Manuel d'utilisation</a></li>
+        <li><a href="#travail">Membres du groupe</a></li>
+
+    </ul>
+</nav>
+    <div id="imgpage">
+        <h1>Rapport</h1>
+        <div id="premierTrait"></div>
+        <h3>Groupe 23</h3>
+        <p>Bienvenue sur notre page Rapport. La conception de ce projet a ete effectuée suivant des étapes données.<br/>Ainsi, le groupe s'est subdivisé en deux parties: Le <em><strong>Front-end</strong></em> , le <em><strong>Back-end</strong></em> et la <em><strong>Base de données.</strong></em></p>
+        <ul>
+            <li>
+              <div class="imagePage">
+              <h4>Front-end</h4></div></li>
+            <p>Il comprend la page d'Acceuil, la page de Connexion, la page d'Inscription, la page de Contact et la page de Rapport. Les langages utilisés sont le HTML, le CSS et le Java Script</Script>.</p>
+            <br><br><br>
+            <li>
+              
+              <div class="imagePage">
+              <h4>Back-end</h4></div></li>
+            <p>Il comprend l'ensemble des etapes de réalisation de la base de données,la mise en place du code de base de Django, les test de serveurs avec les commandes cores Manage room server.  Django et MySQL ont été utilisés.<br/></p>
+            <br><br><br>
+        </ul>
+    </div>
+    </header>
+    <section id="presentation">
+        <div id="textIntro">
+            <h2 id="travail">Membres du groupe et nom github</h2>
+            <p>La repartition des tâches en fonction de chaque membre du groupe est consignée dans le tableau ci-dessous:</p>
+        </div>
+        <table>
+            <tr>
+              <th>Numéro</th>
+              <th>Nom github</th>
+              <th>Nom</th>
+              <th>Prénoms</th>
+              <th>Filière</th>
+              <th>Tâche effectuée</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Abdoul-adk-07</th>
+                <th>ADEKAMBI</th>
+                <th>Abiodoun Abdoul Jabar Olatoundji</th>
+                <th>IM</th>
+                <th> Majeur partie du Front-end et intervention dans le Back-end</th>
+              </tr>
+            <tr>
+                <th>2</th>
+                <th>AGBOSSOUNON-Marielle</th>
+                <th>AGBOSSOUNON</th>
+                <th> Marielle Anaïs Sessi</th>
+                <th>SEIOT</th>
+                <th>Page de contact</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>Roumanatou Assouma</th>
+                <th>ASSOUMA</th>
+                <th>Roumanatou</th>
+                <th>GL</th>
+                <th>front-end</th>
+              </tr>
+              <tr>
+                <th>4</th>
+                <th>QuetsiaBok</th>
+                <th>BOKO</th>
+                <th>Modukpè Quetsia</th>
+                <th>SI</th>
+                <th>Back-end</th>
+              </tr>
+              <tr>
+                <th>5</th>
+                <th>Finosyval</th>
+                <th>COMADOU LEGBA</th>
+                <th>Finangnon Novalis Syldon Valery</th>
+                <th>GL</th>
+                <th>Page de mot de passe oublié</th>
+              </tr>
+              <tr>
+                <th>6</th>
+                <th>Rodrigue-Anonymous</th>
+                <th>FAHOUBO</th>
+                <th>Dossou Rodrigue</th>
+                <th>GL</th>
+                <th>Page de connexion</th>
+              </tr>
+              <tr>
+                <th>7</th>
+                <th>koDarius</th>
+                <th>KODJEKOU</th>
+                <th>Oluwafèmi Dariel Michaël</th>
+                <th>IA</th>
+                <th>Back-end</th>
+              </tr>
+              <tr>
+                <th>8</th>
+                <th>KerrySoglo</th>
+                <th>SOGLO</th>
+                <th>Kerry Ryan Tanguy</th>
+                <th>SI</th>
+                <th>Page de Rapport</th>
+              </tr>
+              <tr>
+                <th>9</th>
+                <th>Cherydane-TOHOUINDJI</th>
+                <th>TOHOUINDJI</th>
+                <th>Ahouéfa Oboudé Cherydane</th>
+                <th>IA</th>
+                <th>Back-end</th>
+              </tr>
+              <tr>
+                <th>10</th>
+                <th>ZINZINDOHOUEOTTMARE</th>
+                <th>ZINZINDOHOUE</th>
+                <th>Sèdjro Ottmare Josephina</th>
+                <th>SI</th>
+                <th>Connexion</th>
+              </tr>
+              <tr>
+                <th>11</th>
+                <th>ZOHOUN-AMEDEE</th>
+                <th>ZOHOUN</th>
+                <th>Amédée Ange-Marie Kpèdido</th>
+                <th>IA</th>
+                <th> Toutes les fonctionnalités du Back-end</th>
+              </tr>
+              <tr>
+                <th>12</th>
+                <th>Emanuella-bot</th>
+                <th>ZOMAHOUN</th>
+                <th>Emmanuella Thérèse Josaphat</th>
+                <th>IM</th>
+                <th>Inscription</th>
+              </tr>
+          </table>
+          <footer>
+            <h2 id="conception">Description de la conception</h2>
+  <p><br><br><br>1. Structure du projet :
+    <br>  - Le projet est organisé en différents dossiers et fichiers selon les normes de Django.
+    <br> - Le dossier principal du projet contient les fichiers de configuration tels que `settings.py`, `urls.py`, etc.
+    <br>- Les applications spécifiques sont créées pour gérer différentes fonctionnalités telles que l'emploi du temps, les cours, les professeurs, les salles, les groupes, etc.
+  
+    <br><br><br>2. Base de données :
+    <br> - Le projet utilise MySQL comme système de gestion de base de données.
+    <br> - La configuration de la base de données est définie dans le fichier `settings.py`.
+    <br> - Les modèles de données sont créés pour représenter les différentes entités de l'application (plages horaires, cours, professeurs, salles, groupes, etc.).
+  
+    <br><br><br>3. Modèles de données :
+    <br> - Les modèles de données sont définis dans le fichiers `models.py` de l'application emploi_temps.
+    <br> - Chaque modèle représente une entité de la base de données et a des champs pour stocker les attributs de cette entité.
+    <br> - Les relations entre les modèles seront définies à l'aide de clés étrangères (ForeignKey) et de clés primaires (PrimaryKey).
+  
+    <br><br><br>4. Vues et Templates :
+    <br> - Les vues sont définies dans le fichier `views.py` de l'application emploi_temps.
+    <br>- Chaque vue est responsable de traiter les requêtes HTTP et de renvoyer les réponses appropriées.
+    <br>- Les templates HTML sont créés pour générer les pages web dynamiquement en utilisant les données fournies par les vues.
+  
+    <br><br><br>5. URLs :
+    <br>- Les URL patterns sont définis dans le fichier `urls.py` de l'application et du projet.
+    <br> - Les URL patterns associent les vues appropriées aux URL spécifiques.
+  
+    <br><br><br>6. Formulaires :
+    <br> - Des formulaires sont créés pour permettre à l'administrateur d'ajouter et de modifier les données de l'application.
+    <br> - Les formulaires aident également à valider les données soumises par les administratreur.
+  
+    <br><br><br>7. Sécurité :
+    <br> - Des mesures de sécurité sont mises en place pour protéger l'application contre les attaques potentielles, telles que l'injection SQL, le cross-site scripting (XSS), etc.
+  
+    <br><br><br>8. Authentification et Autorisation :
+    <br> - L'authentification des utilisateurs est gérée à l'aide du système d'authentification intégré de Django.
+    <br> - Les autorisations sont définies pour contrôler l'accès aux différentes fonctionnalités de l'application.
+  </p>
+    
+  <h2 id="deploiement">Instructions de déploiement</h2>
+  <p>
+
+    1. Clonez le dépôt GitHub du projet : 
+       
+    <br> git clone https://github.com/votre-nom-utilisateur/PIL1_2223_23.git
+       
+    
+    <br><br>2. Assurez-vous d'avoir Python et pip installés sur votre système.
+    
+    <br><br>3. Créez un environnement virtuel pour isoler les dépendances du projet :
+       
+    <br>python3 -m venv myenv
+       
+    <br><br>4. Activez l'environnement virtuel :
+    <br>- Sur Windows :  myenv\Scripts\activate
+         
+    <br> - Sur macOS et Linux :
+         
+         source myenv/bin/activate
+         
+    
+         <br><br>5. Naviguez vers le répertoire du projet :
+       
+       cd PIL1_2223_23
+       
+    
+       <br><br> 6. Installez les dépendances du projet :
+       
+       pip install -r requirements.txt
+       
+    
+       <br><br> 7. Configurez la base de données MySQL :
+       <br> - Assurez-vous que MySQL est installé et en cours d'exécution sur votre système.
+       <br> - Créez une base de données MySQL pour le projet.
+    
+       <br><br> 8. Configurez les paramètres de base de données dans le fichier `settings.py` du projet Django :
+       <br>- Ouvrez le fichier `settings.py` dans un éditeur de texte.
+       <br>- Recherchez la section `DATABASES`.
+       <br>- Mettez à jour les valeurs `NAME`, `USER`, `PASSWORD` et `HOST` avec les informations de votre base de données MySQL.
+    
+       <br><br> 9. Effectuez les migrations pour créer les tables de base de données :
+       
+       python manage.py migrate
+       
+    
+       <br><br>10. (Optionnel) Chargez des données initiales dans la base de données :
+       <br> - Si vous avez des données de départ à charger, créez un fichier de fixtures contenant ces données (par exemple `initial_data.json`).
+       <br> - Exécutez la commande suivante pour charger les fixtures :
+          
+          python manage.py loaddata initial_data.json
+          
+    
+          <br><br> 11. Lancez le serveur de développement :
+        
+        python manage.py runserver
+        
+    
+        <br><br> 12. Accédez à l'application dans votre navigateur en utilisant l'URL fournie par Django (par défaut, `http://localhost:8000/`).
+    
+        <br>Ces instructions sont une base pour le déploiement du projet Django avec une base de données MySQL.
+        <br> Vous pouvez les personnaliser en fonction de vos besoins spécifiques, tels que la configuration du serveur web, la gestion des fichiers statiques, etc.
+    
+        <br>Assurez-vous d'avoir les informations de configuration appropriées pour votre environnement de déploiement, telles que 
+        <br>les informations de connexion à la base de données MySQL et les paramètres de sécurité.
+    
+        <br> </p>
+
+            <h2 id="manuel">Manuel d'utilisation</h2>
+            <p><br>1. Inscription :
+  <br> - Accédez à la page d'inscription de l'application.
+  <br> - Entrez votre nom d'utilisateur, votre email et votre mot de passe.
+  <br> - Cliquez sur le bouton "S'inscrire" pour accéder à la page de connexion
+<br><br><br>2. Connexion de l'utilisateur :
+  <br> - Accédez à la page de connexion de l'application.
+  <br> - Entrez votre nom d'utilisateur et votre mot de passe.
+  <br> - Cliquez sur le bouton "Connexion" pour accéder au tableau de bord.
+
+<br><br><br>3. Connexion de l'administrateur :
+<br>- Accédez à la page Admin de l'application.
+  <br> - Entrez votre nom d'utilisateur et votre mot de passe.
+   <br>- Les identifiants de l'administrateur sont uniques et prédéfinis dans le code
+   <br>- Les identifants sont: username:'<b> DA_ifri</b>' ; password: '<b>ifri_ifri</b>'
+   <br>- Cliquez sur le bouton "Connexion" pour éditer les emplois du temps
+
+
+<br><br><br>4. Tableau de bord de l'utilisateur :
+   <br>- Une fois connecté, vous serez dirigé vers le tableau de bord principal.
+   <br>- Le tableau de bord affiche les liens qui mènent vers l'emploi du temps de chaque promotion.
+
+<br><br><br>5. Tableau de bord de l'administrateur:
+  <br> - Une fois connecté, vous serez dirigé vers le tableau de bord de l'administrateur.
+  <br> - Le tableau de bord affiche les liens qui mènent vers la page d'édition de l'emploi du temps de chaque promotion.
+  <br>- Il est aussi possible de modifier et de supprimer un emploi du temps éditer
+  <br>-  Voici les chemins d'accès à ces pages:
+  <br> path('modifier/<int:emploi_id>/', modifier_emploi, name='modifier_emploi_l1'),
+  <br>path('supprimer/<int:emploi_id>/',supprimer_emploi, name='supprimer_emploi_l1'),
+  <br>path('modifier_l2/<int:emploi_id>/', modifier_emploi_l2, name='modifier_emploi_l2'),
+  <br>path('supprimer_l2/<int:emploi_id>/',supprimer_emploi_l2, name='supprimer_emploi_l2'),
+  <br>path('modifier_l3/<int:emploi_id>/', modifier_emploi_l3, name='modifier_emploi_l3'),
+  <br>path('supprimer_l3/<int:emploi_id>/',supprimer_emploi_l3, name='supprimer_emploi_l3'), 
+</p>
+          </footer>
+</body>
+</html>

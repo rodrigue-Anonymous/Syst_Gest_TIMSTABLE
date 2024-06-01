@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.0-dist/css/bootstrap.min.css'%}">
+    <title>IFRI TIME LAPSE</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <img src="{% static 'assets\img\logo-ifri-removebg-preview.png' %}" alt="" style="width: 70px;">
+        <a class="navbar-brand" href="{% url 'emploi_temps:home' %}" style="text-transform: uppercase;">Ifri Timel'apse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">         
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'emploi_temps:admin_page' %}">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'emploi_temps:home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'emploi_temps:register' %}">Inscription</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'emploi_temps:login' %}">Se connecter</a>
+            </li>                              
+          </ul>              
+        </div>            
+      </div>           
+    </nav>           
+  </header>
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active Content1" style="background-image: url('/static/assets/img/work.jpg'); background-size: cover;">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-start">                         
+            <div class="carousel-caption text-start">
+              <h1>"Bienvenue à IFRI,</h1>                             
+                <p>Votre source d'accès rapide à l'emploi du temps hebdomadaire des étudiants en Licence 1.
+                  Restez organisé(e) avec notre plateforme dédiée à l'institut de formation et de recherche en informatique, 
+                  simplifiant votre planification académique."
+                </p>
+              <figcaption class="blockquote-footer opacity-75" style="color: white;">
+                Institut de formation en informatique <cite title="Source Title">IFRI</cite>
+              </figcaption>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item Content2" style="background-image: url('/static/assets/img/work1.jpg'); background-size: cover;">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Avec IFRI TIMEL'APSE</h1>
+            <p>"Explorez votre semaine en un clic !
+              Découvrez dès maintenant l'opportunité passionnante de consulter votre programme hebdomadaire sur notre site. 
+              Rejoignez-nous pour commencer votre voyage académique sans limite !</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item Content3" style="background-image: url('/static/assets/img/work2.jpg'); background-size: cover;">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>L'interface</h1>
+            <p>L'interface utilisateur de l'application est intuitive et conviviale, 
+              ce qui facilite la consultation des emplois du temps par les étudiants. 
+              De plus, l'interface est adaptative et fonctionne correctement sur différents appareils tels que les ordinateurs de bureau, 
+              les tablettes et les smartphones, offrant une expérience utilisateur cohérente.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+<!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">  
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"> Les Opportunités et <span class="text-body-secondary">fonctionnalités</span></h2>
+        <p class="lead">Le site offre des informations complémentaires telles que les détails des cours, 
+          les noms des enseignants et les salles de cours. 
+          Ces informations sont facilement accessibles et bien organisées pour faciliter la recherche d'informations supplémentaires.</p>
+      </div>
+      <div class="col-md-5" style="background-image: url('/static/assets/img/fonctions.jpg'); background-size: cover; " >
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">La sécurité <span class="text-body-secondary">et la confidentialité</span></h2>
+        <p class="lead">En ce qui concerne la sécurité et la confidentialité, 
+          les données des utilisateurs sont stockées de manière sécurisée et confidentielle. 
+          L'accès aux emplois du temps et aux informations complémentaires est restreint aux utilisateurs authentifiés, 
+          garantissant ainsi la protection des données sensibles.</p>
+      </div>
+      <div class="col-md-5 order-md-1" style="background-image: url('/static/assets/img/security1.jpg'); background-size: cover; ">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Structuration <span class="text-body-secondary">de l'information</span></h2>
+        <p class="lead">Les coordonnateurs de formation ont la possibilité d'éditer les emplois du temps hebdomadaires par promotion, 
+          tandis que les étudiants peuvent visualiser facilement ces emplois du temps. Ils sont présentés de manière claire, 
+          bien structurée et facile à comprendre. De plus, les étudiants peuvent filtrer les emplois du temps par filière, 
+          groupe ou enseignant pour trouver rapidement les informations qui les intéressent.</p>
+      </div>
+      <div class="col-md-5" style="background-image: url('/static/assets/img/data.jpg'); background-size: cover; ">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Les Notifications<span class="text-body-secondary"> Push Newsletters.</span></h2>
+        <p class="lead">La fonctionnalité de notifications est un atout majeur pour ce site de construction,
+           permettant aux étudiants d'être tenus informés en temps réel des modifications et ajouts d'événements dans leurs emplois du temps. 
+           Grâce à des notifications instantanées par courrier électronique ou notifications push dans l'application, 
+          les étudiants restent constamment à jour et peuvent facilement s'adapter aux changements de leur emploi du temps.</p>
+      </div>
+      <div class="col-md-5 order-md-1" style="background-image: url('/static/assets/img/mail.jpg'); background-size: cover; ">
+      </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+  
+<script src="{% static 'bootstrap-5.3.0-dist\js\bootstrap.bundle.min.js' %}"></script>
+</body>
+  <footer class="py-3 my-4 container">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="{% url 'emploi_temps:home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="{% url 'emploi_temps:contact' %}" class="nav-link px-2 text-body-secondary">Contact Us</a></li> 
+    </ul>
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p class="text-center text-body-secondary">&copy; IFRI TIME LAPSE 2023, Inc</p>
+  </footer>
+</html>
+    

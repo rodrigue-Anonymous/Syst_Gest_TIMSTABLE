@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Admin Page</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/ " />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{% static 'assets/css/adminpg.css' %}">
+        <link rel="stylesheet" href="{% static 'bootstrap-5.3.0-dist/css/bootstrap.min.css'%}">
+    </head>
+    <style>
+        body {
+            padding-top: 4rem;
+            color: rgb(var(--bs-tertiary-color-rgb));
+        }
+    
+        /* Style de la table */
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+        /* Style des cellules de l'en-tête */
+        th, td {
+          border: 1px solid rgb(167, 103, 103);
+          padding: 8px;
+          text-align: center;
+        }
+        td{
+          font-weight: bold;
+        }
+        td.a,td.c,td.e{
+          background-color: rgb(252, 251, 212);
+        }
+        td.b,td.d,td.f{
+          background-color: rgb(202, 252, 189);
+        }
+
+        /* Style des cellules de l'en-tête */
+        th {
+          background-color: #c2f8fc;
+        }
+      </style>
+   
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">                
+              <div class="list-group list-group-flush">
+                  <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'emploi_temps:liste' %}">Dashboard</a>
+                  
+              </div>
+          </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                      <img src="{% static 'assets\img\logo-ifri-removebg-preview.png' %}" alt="" style="width: 70px;">
+                      <a class="navbar-brand" href="{% url 'emploi_temps:liste' %}" style="text-transform: uppercase;">Ifri Timel'apse</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">         
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Deconnexion</a>
+                          </li>                                              
+                        </ul>              
+                      </div>            
+                    </div>           
+                  </nav>          
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">Emploi du temps Licence 3</h1>
+                    <!-- Tableau pour représenter l'emploi du temps -->
+                    <table>
+                      <!-- En-tête du tableau avec les jours de la semaine -->
+                      <thead>
+                        <tr>
+                          <th>Lundi</th>
+                          <th>Mardi</th>
+                          <th>Mercredi</th>
+                          <th>Jeudi</th>
+                          <th>Vendredi</th>
+                          <th>Samedi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Première ligne de cases -->
+                        <tr>
+                          <td class="a">
+                            {% for emploi in emplois %}
+                              {% if emploi.jour == "Lundi" %}
+                              Cours: {{ emploi.cours }}<br>
+                              Groupe: {{ emploi.groupe }}<br>
+                              Professeur: {{ emploi.professeur }}<br>
+                              Salle: {{ emploi.salle }}<br>
+                              Heure: {{ emploi.heure }}<br>
+                              Masse horaire: {{ emploi.masse_horaire }}<br>
+                              Info: {{ emploi.info }}<br><br><br>
+                              {% endif %}
+                            {% endfor %}
+                          </td>
+                          <td class="b">
+                            {% for emploi in emplois %}
+                              {% if emploi.jour == "Mardi" %}
+                              Cours: {{ emploi.cours }}<br>
+                              Groupe: {{ emploi.groupe }}<br>
+                              Professeur: {{ emploi.professeur }}<br>
+                              Salle: {{ emploi.salle }}<br>
+                              Heure: {{ emploi.heure }}<br>
+                              Masse horaire: {{ emploi.masse_horaire }}<br>
+                              Info: {{ emploi.info }}<br><br><br>
+                              {% endif %}
+                            {% endfor %}
+                          </td>
+                          <td class="c">
+                            {% for emploi in emplois %}
+                              {% if emploi.jour == "Mercredi" %}
+                              Cours: {{ emploi.cours }}<br>
+                              Groupe: {{ emploi.groupe }}<br>
+                              Professeur: {{ emploi.professeur }}<br>
+                              Salle: {{ emploi.salle }}<br>
+                              Heure: {{ emploi.heure }}<br>
+                              Masse horaire: {{ emploi.masse_horaire }}<br>
+                              Info: {{ emploi.info }}<br><br><br>
+                              {% endif %}
+                            {% endfor %}
+                          </td>
+                          <td class="d">
+                            {% for emploi in emplois %}
+                              {% if emploi.jour == "Jeudi" %}
+                              Cours: {{ emploi.cours }}<br>
+                              Groupe: {{ emploi.groupe }}<br>
+                              Professeur: {{ emploi.professeur }}<br>
+                              Salle: {{ emploi.salle }}<br>
+                              Heure: {{ emploi.heure }}<br>
+                              Masse horaire: {{ emploi.masse_horaire }}<br>
+                              Info: {{ emploi.info }}<br><br><br>
+                              {% endif %}
+                            {% endfor %}
+                          </td>
+                          <td class="e">
+                            {% for emploi in emplois %}
+                              {% if emploi.jour == "Vendredi" %}
+                              Cours: {{ emploi.cours }}<br>
+                              Groupe: {{ emploi.groupe }}<br>
+                              Professeur: {{ emploi.professeur }}<br>
+                              Salle: {{ emploi.salle }}<br>
+                              Heure: {{ emploi.heure }}<br>
+                              Masse horaire: {{ emploi.masse_horaire }}<br>
+                              Info: {{ emploi.info }}<br><br><br>
+                              {% endif %}
+                            {% endfor %}
+                          </td>
+                          <td class="f">
+                            {% for emploi in emplois %}
+                              {% if emploi.jour == "Samedi" %}
+                                Cours: {{ emploi.cours }}<br>
+                                Groupe: {{ emploi.groupe }}<br>
+                                Professeur: {{ emploi.professeur }}<br>
+                                Salle: {{ emploi.salle }}<br>
+                                Heure: {{ emploi.heure }}<br>
+                                Masse horaire: {{ emploi.masse_horaire }}<br>
+                                Info: {{ emploi.info }}<br><br><br>
+                              {% endif %}
+                            {% endfor %}
+                          </td>
+                        </tr>                         
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="{% static 'bootstrap-5.3.0-dist\js\bootstrap.bundle.min.js' %}"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'assets\js\adminpgscripts.js' %}"></script>   
+    </body> 
+</html>

@@ -1,0 +1,95 @@
+/* GLOBAL STYLES */
+body {
+  padding-top: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+.navbar {
+  font-size: 18px;
+  padding: 25px 0 15px 0;
+}
+
+.centered-hr {
+  display: block;
+  margin: 1px auto 20px auto;
+}
+
+body {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: blue rgba(255, 255, 255, 0.5);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: blue rgba(255, 255, 255, 0.5);
+}
+
+body {
+  min-height: 200vh;
+}
+
+/* CUSTOMIZE THE CAROUSEL */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+/* MARKETING CONTENT */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* Featurettes */
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+/* RESPONSIVE CSS */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}

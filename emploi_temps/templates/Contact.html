@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.0-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/contact.css' %}">
+    <title>IFRI Contact</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section orange">
+            <div>
+                <div class="container-fluid" style="display: flex;">
+                    <img src="{% static 'assets\img\logo-ifri-removebg-preview.png' %}" alt="" style="width: 70px;">               
+                    <h3 style="padding-top: 10px;">Formulaire de contact IFRI TIMEL'APSE</h2>
+                </div>                                 
+                <h5 style="padding-top: 10px;">Nous bâtissons l'excellence</h2>                
+                <p style="font-size: 12px;">
+                    IFRI est situé sur le campus de l'université. L'Administration est ouverte du lundi au vendredi de 8H à 16H30.
+                </p>
+
+                <div class="contact-info">
+                    <img src='/static/assets/img/mail-icon.svg'; alt="Mail Icon" class="icon mail-icon">
+                    <span>(+229) 55 02 80 70</span>
+                </div>
+
+                <div class="contact-info">
+                    <img src='/static/assets/img/phone-icon.svg' alt="Phone Icon" class="icon phone-icon">
+                    <span>secretariat@ifri.uac.bj</span>
+                </div>
+
+                <div class="contact-info">
+                    <img src='/static/assets/img/address-icon.svg' alt="Address Icon" class="icon address-icon">
+                    <span>Université d'Abomey-Calavi-Campus, Rue Agro Maquis FSA</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section blue">
+            <form>
+                <h1>Contactez-nous</h1>
+                <p>Pour contacter les membres de l'administration de l'IFRI, laissez vos messages ici !</p>
+                <div class="section pink">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Nom">
+
+                    <label for="name">Prénom</label>
+                    <input type="text" id="name" placeholder="Prénom">
+                </div>
+                <div class="section green">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="Votre email">
+
+                    <label for="name">Objet</label>
+                    <input type="text" id="name" placeholder="Votre demande">
+                </div>
+                <div class="section black">
+                    <label for="nom">Message :</label>
+                    <textarea name="text" id="text" cols="50" rows="2"></textarea>
+                </div>
+                <input type="submit" value="Soumettre" class="button">
+            </form>
+        </div>
+    </div>
+  
+    <fieldset class="yellow">
+        <footer class="py-3 my-4 container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="{% url 'emploi_temps:home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="{% url 'emploi_temps:contact' %}" class="nav-link px-2 text-body-secondary">Contact Us</a></li> 
+            </ul>
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p class="text-center text-body-secondary">&copy; IFRI TIME LAPSE 2023, Inc</p>
+          </footer>
+    </fieldset>
+    
+</body>
+</html>
